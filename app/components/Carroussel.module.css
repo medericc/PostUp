@@ -1,0 +1,26 @@
+.customDots {
+    text-align: center;
+  }
+  
+  .customDots ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .customDots li {
+    margin: 0 5px; /* Ajout d'un espace entre les points */
+  }
+  
+  .customDots button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: none;
+  }
+  
+  .customDots .slick-active button {
+    background-color: #000; /* Couleur différente pour le point actif */
+  }
+  

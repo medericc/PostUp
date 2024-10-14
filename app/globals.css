@@ -25,3 +25,94 @@ body {
     text-wrap: balance;
   }
 }
+/* globals.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-geist-sans);
+  background-color: rgb(26,26,26);
+  color: #fff;
+}
+
+h1, h2 {
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@font-face {
+  font-family: 'Heroic';
+  src: url('/fonts/Heroic.woff2') format('woff2'),
+       url('/fonts/Heroic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scrollText {
+  animation: scrollText 15s linear infinite;
+}
+
+.snap-x {
+  scroll-snap-type: x mandatory;
+}
+
+.snap-center {
+  scroll-snap-align: center;
+}
+/* Ajout d'une classe pour masquer les éléments initialement */
+.hidden-item {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.bg-black-2 {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: inherit;
+  gap: 2rem;
+  height: 25.75rem;
+  padding: 3rem 2.375rem;
+  text-align: center;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: white; /* Couleur des flèches */
+}
+
+.slick-dots li button:before {
+  color: white; /* Couleur des dots */
+}
